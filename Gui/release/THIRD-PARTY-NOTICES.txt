@@ -1,0 +1,59 @@
+Dota Archive 1.0.8
+
+The application source and modifications are provided under GNU GPL version 2.
+See LICENSE.txt and source/DotaArchive-1.0.8-source.zip. This is a community
+utility, with no affiliation with Valve, Steam or SteamDB. Original app icon
+and UI assets are included with the source under the same license.
+
+DepotDownloader 3.4.0-history.1+c553ef4 (modified build for Dota Archive)
+Copyright SteamRE Team and contributors. GNU GPL version 2.
+https://github.com/SteamRE/DepotDownloader
+Exact upstream base commit: c553ef4d60c00a4f5fd16c9fe017f569001589ff
+The complete modified source is included under DepotDownloader/ in the source
+archive. Modified source files carry change dates; the included
+HISTORICAL-COMPATIBILITY.txt and Build-HistoricalEngine.ps1 document and rebuild
+the opt-in historical-depot changes. This executable is not an upstream release.
+
+Microsoft WebView2 SDK 1.0.4258.31
+Copyright Microsoft Corporation. SDK redistribution license:
+licenses/WebView2-LICENSE.txt. The SDK loader and managed DLLs are included;
+the Evergreen Runtime is a separate prerequisite, not bundled or installed.
+https://learn.microsoft.com/microsoft-edge/webview2/concepts/distribution
+
+Html Agility Pack 1.13.1
+Copyright ZZZ Projects Inc., Simon Mourrier, Jeff Klawiter, Stephan Grell and
+contributors. MIT license: licenses/HtmlAgilityPack-LICENSE.txt.
+https://github.com/zzzprojects/html-agility-pack/tree/v1.13.1
+
+The self-contained DepotDownloader engine incorporates dependencies declared
+by its included project files. Relevant upstream notices are included:
+
+- SteamKit2 3.2.0: LGPL-2.1-only. licenses/SteamKit-LICENSE and
+  licenses/steamkit2.3.2.0-license.txt. Exact source commit
+  c31ce16a766c35a0a3a94a6802f13e9bbd2a1281 is included as
+  SteamKit-3.2.0-source.zip inside the source archive. You can rebuild the engine
+  with a modified compatible SteamKit using the provided project/source.
+  https://github.com/SteamRE/SteamKit
+- protobuf-net / protobuf-net.Core 3.2.52: Apache-2.0, Marc Gravell and
+  contributors. licenses/protobuf-net-LICENSE.txt and licenses/Apache-2.0.txt.
+  https://github.com/protobuf-net/protobuf-net/tree/f4db4afce39c3da09aac2c539df53452319c5983
+- QRCoder 1.6.0: MIT, Raffael Herrmann and contributors.
+  licenses/QRCoder-LICENSE.txt.
+  https://github.com/codebude/QRCoder/tree/bd980577640c47f8bb881cf24c8443415a579d36
+- ZstdSharp.Port 0.8.5: MIT, Oleg Stepanischev and contributors.
+  licenses/ZstdSharp-LICENSE.txt.
+  https://github.com/oleg-st/ZstdSharp/tree/033a60cc132a437ff64467fd0a531b45638ce2f2
+- Microsoft .NET runtime 9.0.21 and framework components: MIT and third-party notices
+  in licenses/dotnet-LICENSE.txt and licenses/dotnet-THIRD-PARTY-NOTICES.txt.
+  https://github.com/dotnet/runtime
+
+Public historical metadata comes from SteamDB app 570 public depot history.
+Official patch evidence comes from Valve's public Dota 2 / Steam news sources
+and dated notices from the official Chinese Dota 2 publisher at dota2.com.cn.
+The offline patch-date directory includes API responses, dated primary-source
+observations and SHA256 provenance. Its dates identify official calendar dates or announcement
+times; they are not an independently verified first-client-build index.
+Their original content and trademarks remain with their respective owners;
+software license terms do not relicense third-party site content or game data.
+The release carries public depot/patch evidence and provenance only, never
+browser login profiles, cookies, Steam account credentials or downloaded games.

@@ -1,0 +1,32 @@
+DepotDownloader 3.4.0-history.1+c553ef4 for Dota Archive
+Modified: 2026-10-22
+Upstream: https://github.com/SteamRE/DepotDownloader
+Exact base: c553ef4d60c00a4f5fd16c9fe017f569001589ff
+License: GNU GPL version 2 (see LICENSE)
+
+This is a modified build, not an unmodified SteamRE release.
+
+The optional -history argument accepts only app 570 / public, explicit unique
+depot IDs and an exact nonzero/non-sentinel manifest for every depot. Workshop
+content and branch passwords are rejected. This mode permits requested depots
+that the current app metadata no longer enumerates. It never substitutes the
+current manifest or guesses a shared depot's source app.
+
+The caller must supply the combination resolved from complete historical
+evidence. This local compatibility flag is not proof of historical coverage
+and grants no Steam access. App and per-depot license checks, depot decryption
+key requests, manifest request codes and CDN authorization remain unchanged.
+A requested depot that cannot be prepared fails the complete request.
+
+Changed upstream files:
+- DepotDownloader/Program.cs: explicit opt-in argument and validation.
+- DepotDownloader/DownloadConfig.cs: opt-in configuration field.
+- DepotDownloader/ContentDownloader.cs: historical enumeration compatibility,
+  conservative shared-source handling and complete-request failure semantics.
+Added: DepotDownloader/HistoricalDepotPolicy.cs, offline policy tests and the
+workspace-local Build-HistoricalEngine.ps1 build script.
+
+Build-HistoricalEngine.ps1 uses a portable .NET 9 SDK and workspace-local NuGet
+cache. It does not install runtimes or change machine settings. build/ contains
+build diagnostics; artifacts/win-x64 contains the self-contained executable.
+Corresponding modified source must accompany any redistributed executable.

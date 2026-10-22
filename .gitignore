@@ -1,0 +1,49 @@
+# Local build output and dependencies; release binaries live in GitHub Releases.
+**/bin/
+**/obj/
+**/artifacts/
+**/build/
+**/rebuilt/
+**/dependencies/
+*.exe
+*.dll
+*.pdb
+*.nupkg
+*.zip
+!SteamKit-3.2.0-source.zip
+
+# Per-user tools, secrets, logs and downloaded clients must never be committed.
+.vs/
+.idea/
+*.user
+*.suo
+*.log
+.env
+.env.*
+*.token
+*.key
+*.pfx
+*.p12
+**/.DepotDownloader/
+**/.dota-archive-browser/
+**/_compatibility/
+**/BrowserProfile/
+**/browser-profile/
+**/WebView2/
+**/*.WebView2/
+**/User Data/
+**/account.config
+**/loginusers.vdf
+**/config.vdf
+**/ssfn*
+**/Cookies
+**/Login Data
+**/Local State
+
+# Local publication staging and generated data.
+/data/
+/downloads/
+/clients/
+/release/
+/releases/
+/publish-state.json

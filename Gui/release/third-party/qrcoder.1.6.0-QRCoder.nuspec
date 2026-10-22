@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>QRCoder</id>
+    <version>1.6.0</version>
+    <authors>Raffael Herrmann</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>nuget-icon.png</icon>
+    <readme>nuget-readme.md</readme>
+    <projectUrl>https://github.com/codebude/QRCoder/</projectUrl>
+    <description>QRCoder is a simple library, written in C#.NET, which enables you to create QR codes.</description>
+    <releaseNotes>Release notes: https://github.com/codebude/QRCoder/wiki/Release-notes</releaseNotes>
+    <tags>c# csharp qr qrcoder qrcode qr-generator qr-code-generator</tags>
+    <repository type="git" url="https://github.com/codebude/QRCoder.git" commit="bd980577640c47f8bb881cf24c8443415a579d36" />
+    <dependencies>
+      <group targetFramework=".NETFramework3.5" />
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encoding.CodePages" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0">
+        <dependency id="System.Drawing.Common" version="5.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0-windows7.0">
+        <dependency id="System.Drawing.Common" version="5.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0" />
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="System.Drawing.Common" version="6.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Drawing.Common" version="5.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encoding.CodePages" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="PresentationCore" targetFramework=".NETFramework3.5, .NETFramework4.0" />
+      <frameworkAssembly assemblyName="PresentationFramework" targetFramework=".NETFramework3.5, .NETFramework4.0" />
+      <frameworkAssembly assemblyName="WindowsBase" targetFramework=".NETFramework3.5, .NETFramework4.0" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
